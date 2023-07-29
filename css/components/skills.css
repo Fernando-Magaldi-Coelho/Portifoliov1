@@ -3,6 +3,10 @@
     scroll-margin-top: 15rem;
 }
 
+.skills .tertiary-title {
+  color: #993399;
+}
+
 .skills .description{
     color: white;
 }

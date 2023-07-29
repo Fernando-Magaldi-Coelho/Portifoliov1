@@ -2,6 +2,9 @@ footer{
     background-color: #0f0f0f;
 }
 
+footer .tertiary-title{
+    color: #993399;
+}
 
 
 footer .footer_content{

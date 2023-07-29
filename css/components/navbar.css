@@ -31,7 +31,7 @@
 }
 
 .navbar .navbar__content .navbar__links a:hover {
-    color: #444;
+    color: #993399;
     transition: 0.5s;
     transform: translate(0, -10px);
     
