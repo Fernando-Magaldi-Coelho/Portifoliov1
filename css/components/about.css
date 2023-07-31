@@ -32,3 +32,34 @@
     flex: 1;
     max-width: 66rem;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about .about_left,
+    .about .about_right {
+      max-width: 100%;
+    }
+  
+    .about .about_left ul {
+      margin-left: 0;
+      text-align: center;
+      display: flex; 
+      justify-content: center; 
+    }
+  
+    .about .about_left ul li {
+      display: inline-block; 
+      margin-right: 1rem; 
+    }
+  
+    .about .about_left ul li:last-child {
+      margin-right: 0; 
+    }
+  }
+  
+  

@@ -47,9 +47,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  body{
-    overflow: hidden;
-  }
+
 
   .navbar.active{
     transform: translateY(0);
@@ -96,3 +94,19 @@
     text-align: center;
   }
 }
+
+.navbar__mobile {
+  display: none;
+}
+
+
+.navbar__mobile.active {
+  display: block;
+}
+
+
+
+
+
+
+

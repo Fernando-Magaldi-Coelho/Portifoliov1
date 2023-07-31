@@ -1,22 +1,24 @@
-
 // NAV BAR
 const navbar = document.querySelector('.navbar');
 const MobileNavbar = document.querySelector('.navbar__mobile');
 const button = document.querySelector('.burguer');
-
+const mobileLinks = document.querySelectorAll('.mobile__links a');
 
 button.addEventListener('click', function(){
-    MobileNavbar.classList.toggle('active')
+    MobileNavbar.classList.toggle('active');
 });
-
 
 window.addEventListener('scroll', function(){
     if (this.window.pageYOffset > 0) return navbar.classList.add('active');
     return navbar.classList.remove('active');
 });
 
-
-
+// Adicione um ouvinte de eventos a cada link dentro de .mobile__links
+mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        MobileNavbar.classList.remove('active');
+    });
+});
 
 // Obtém todos os elementos com a classe "image-container"
 const imageContainers = document.querySelectorAll('.image-container');
@@ -31,7 +33,13 @@ imageContainers.forEach(container => {
 
 
 
+
+
+
 // TYPING EFFECT
+
+const titulo = document.querySelector('h1');
+typeWriter(titulo);
 
 function typeWriter(elemento) {
   const textoArray = elemento.innerHTML.split('');
@@ -40,26 +48,6 @@ function typeWriter(elemento) {
     setTimeout(() => elemento.innerHTML += letra, 75 * i);
   });
 }
-
-
-
-// Se estiver tendo problemas com performance, utilize o FOR loop como abaixo no local do forEach
-// function typeWriter(elemento) {
-//   const textoArray = elemento.innerHTML.split('');
-//   elemento.innerHTML = '';
-//   for(let i = 0; i < textoArray.length; i++) {
-//     setTimeout(() => elemento.innerHTML += textoArray[i], 75 * i);
-//   }
-// }
-
-const titulo = document.querySelector('h1');
-typeWriter(titulo);
-
-
-
-
-
-
 
 
 
@@ -73,11 +61,6 @@ function getScrollTopByHref(element) {
 }
 
 function scrollToPosition(to) {
-  // Caso queira o nativo apenas
-	// window.scroll({
-	// top: to,
-	// behavior: "smooth",
-	// })
   smoothScrollTo(0, to);
 }
 
@@ -91,7 +74,7 @@ menuItems.forEach(item => {
 	item.addEventListener('click', scrollToIdOnClick);
 });
 
-// Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
+
 /**
  * Smooth scroll animation
  * @param {int} endX: destination x coordinate
@@ -107,7 +90,7 @@ function smoothScrollTo(endX, endY, duration) {
 
   duration = typeof duration !== 'undefined' ? duration : 400;
 
-  // Easing function
+  
   const easeInOutQuart = (time, from, distance, duration) => {
     if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
     return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
@@ -121,7 +104,7 @@ function smoothScrollTo(endX, endY, duration) {
       clearInterval(timer);
     }
     window.scroll(newX, newY);
-  }, 1000 / 60); // 60 fps
+  }, 1000 / 60); // 100 / 60 fps
 };
 
 

@@ -18,7 +18,8 @@
 }
 
 body::-webkit-scrollbar-track{
-  border-radius: 20px;             
+  
+  background-color: #0f0f0f;           
 }
 
   body::-webkit-scrollbar {
@@ -26,7 +27,7 @@ body::-webkit-scrollbar-track{
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: #0f0f0f;    
+    background-color: #993399;    
     border-radius: 20px;      
   }
   
@@ -92,7 +93,7 @@ body::-webkit-scrollbar-track{
   }
   
   .btn.btn-primary {
-    background-color: darkorchid;
+    background-color: #993399;
     color: white;
     font-weight: 400;
     font-size: 1.4rem;
