@@ -62,7 +62,7 @@ function scrollToPosition(to) {
 
 function scrollToIdOnClick(event) {
 	event.preventDefault();
-	const to = getScrollTopByHref(event.currentTarget)- 250;
+	const to = getScrollTopByHref(event.currentTarget)- 200;
 	scrollToPosition(to);
 }
 
