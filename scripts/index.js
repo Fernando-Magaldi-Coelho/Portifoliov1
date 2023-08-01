@@ -49,7 +49,7 @@ function typeWriter(elemento) {
 
 // Animar o scroll até o alvo
 
-const menuItems = document.querySelectorAll('.navbar__links a, .btn[href^="#"]');
+const menuItems = document.querySelectorAll(' .navbar__links a, .btn, .mobile__links a[href^="#"]');
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');

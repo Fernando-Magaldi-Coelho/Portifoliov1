@@ -1,10 +1,12 @@
 .skills{
     background-color: #0f0f0f;
-    scroll-margin-top: 15rem;
+    scroll-margin-top: 240px;
 }
 
 .skills .skills_content .terceiro-title {
   color: #993399;
+  font-weight: 500;
+  line-height: 45px; 
 }
 
 .skills .description{
@@ -12,7 +14,7 @@
 }
 
 .skills .skills_content{
-    padding: 6rem 4rem;
+    padding: 96px 64px;
     text-align: center;
     width: 100%;
     max-width: 1200px; 
@@ -21,14 +23,13 @@
 }
 
 .skills .skills_content .description{
-    max-width: 56rem;
-    margin: 0 auto 6rem;
+    max-width: 896px;
+    margin: 0 auto 96px;
 }
 
 .skills .skills_content ul{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 2rem;
+    gap: 32px;
 }
 
 .skills .skills_content ul li .image-container{
@@ -37,9 +38,9 @@
 
 
 .skills .skills_content ul li h3{
-    font-size: 1.6rem;
+    font-size: 25.6px;
     font-weight: 500;
-    margin: 2rem 0 1rem;
+    margin: 32px 0 16px;
 }
 
 
