@@ -92,4 +92,12 @@
   .about .about_left ul li:last-child {
       margin-right: 0;
   }
+
+  .about .image {
+    -webkit-filter: grayscale(0%);
+  }
 }
+
+
+
+
