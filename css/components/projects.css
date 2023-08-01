@@ -37,6 +37,15 @@ body .bodypro {
     max-width: 1200px;
     word-wrap: break-word; 
     z-index: 1;
+    padding: 0 40px; 
+    margin: 0 auto;
+    margin-bottom: 260px;
+}
+
+.projects .projects_content .segundo-title{
+    font-size: 40px; 
+    font-weight: 700;
+    color: #02073e;
 }
 
 .projects .card {

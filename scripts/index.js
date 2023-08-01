@@ -1,8 +1,9 @@
 // NAV BAR
 const navbar = document.querySelector('.navbar');
 const MobileNavbar = document.querySelector('.navbar__mobile');
-const button = document.querySelector('.burguer');
+const button = document.querySelector('.barra');
 const mobileLinks = document.querySelectorAll('.mobile__links a');
+const imageContainers = document.querySelectorAll('.image-container');
 
 button.addEventListener('click', function(){
     MobileNavbar.classList.toggle('active');
@@ -13,20 +14,15 @@ window.addEventListener('scroll', function(){
     return navbar.classList.remove('active');
 });
 
-// Adicione um ouvinte de eventos a cada link dentro de .mobile__links
 mobileLinks.forEach(link => {
     link.addEventListener('click', function() {
         MobileNavbar.classList.remove('active');
     });
 });
 
-// Obtém todos os elementos com a classe "image-container"
-const imageContainers = document.querySelectorAll('.image-container');
 
-// Adiciona o evento de clique a cada elemento
 imageContainers.forEach(container => {
   container.addEventListener('click', () => {
-    // Alterna a classe "active" no elemento clicado para mostrar ou ocultar o texto
     container.classList.toggle('active');
   });
 });

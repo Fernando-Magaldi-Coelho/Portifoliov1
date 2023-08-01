@@ -3,7 +3,7 @@
     scroll-margin-top: 15rem;
 }
 
-.skills .tertiary-title {
+.skills .skills_content .terceiro-title {
   color: #993399;
 }
 
@@ -14,6 +14,10 @@
 .skills .skills_content{
     padding: 6rem 4rem;
     text-align: center;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    margin-bottom: 260px;
 }
 
 .skills .skills_content .description{

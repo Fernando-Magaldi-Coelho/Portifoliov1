@@ -2,20 +2,33 @@ footer{
     background-color: #0f0f0f;
 }
 
-footer .tertiary-title{
+footer .terceiro-title{
     color: #993399;
+    margin-bottom: 10px; 
 }
+
+footer .footer_content .segundo-title {
+    font-size: 40px; 
+    font-weight: 700;
+    color: #993399;
+  }
 
 
 footer .footer_content{
     text-align: center;
     padding: 6rem 2rem 1rem;
-    max-width: 47rem;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 40px; 
+    margin: 0 auto;
 }
 
 footer .footer_content .footer_contact span{
     display: block;
     font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
 }
 
 footer .footer_content ul li{
@@ -31,4 +44,15 @@ footer .footer_content .footer_copyright{
     font-size: 1.4rem;
     color: white;
 }
+
+footer .image{
+    transition: all 1s ease;
+  }
+  
+  footer .image:hover{
+    transition: 0.5s;
+      transform: translate(0, -10px);
+      transition-delay: 0.2s;
+  }
+
 
