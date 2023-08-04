@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #993399;
+  border-radius: 20px;
+}
+
+html {
+  font-size: 10px; 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px; 
+  margin-top: 240px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 64px; 
+  font-weight: 700;
+  color: #02073e;
+}
+
+
+p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px; 
+}
+
+
+.btn {
+  background-color: none;
+  border: none;
+  outline: none;
+  padding: 10px 40px; 
+  display: inline-block;
+  border-radius: 5px; 
+}
+
+.btn.btn-primary {
+  background-color: #993399;
+  color: white;
+  font-weight: 400;
+  font-size: 14px; 
+}
+
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 9.6px; 
+  }
+
+  h1 {
+    font-size: 60px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 9.28px; 
+  }
+
+  .max-width {
+    padding: 0 20px; 
+  }
+
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 42px; 
+  }
+}
