@@ -119,26 +119,6 @@ ScrollReveal({
 });
 
 
-ScrollReveal().reveal('.skills h2', { 
-  delay: 150,
-  origin: 'top' 
-});
-
-ScrollReveal().reveal('.skills p', { 
-  delay: 150,
-  origin: 'top' 
-});
-
-ScrollReveal().reveal('.skills .skillImg', { 
-  delay: 150,
-  origin: 'top' 
-});
-
-ScrollReveal().reveal('.skills span', { 
-  delay: 150,
-  origin: 'top' 
-});
-
 ScrollReveal().reveal('.projects .cards-container', { 
   delay: 150,
   origin: 'top' 
