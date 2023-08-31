@@ -104,6 +104,15 @@ body .bodypro {
     text-align: center;
 }
 
+.projects a{
+    border: solid 1px #993399;
+}
+
+.projects a:hover{
+    background-color: transparent;
+    border: solid 1px #993399;
+}
+
 @media only screen and (max-width: 968px) {
     .cards-container {
         flex-wrap: wrap; 
