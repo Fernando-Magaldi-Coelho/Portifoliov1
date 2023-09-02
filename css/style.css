@@ -66,7 +66,14 @@ p{
   background-color: #993399;
   color: white;
   font-weight: 400;
-  font-size: 14px; 
+  font-size: 14px;
+  border: 2px solid #993399; 
+  transition: background-color .2s linear;
+}
+
+.btn.btn-primary:hover{
+  background-color: #161623;
+  border: 2px solid #993399;
 }
 
 

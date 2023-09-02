@@ -11,6 +11,7 @@ header{
     margin-bottom: 260px;
 }
 
+
 header .header_left{
     max-width: 950px;
     flex: 1;
@@ -22,6 +23,8 @@ header .header_left p{
     margin-bottom: 64px;
     
 }
+
+
 
 header .header_right .header_image{
     position: relative;

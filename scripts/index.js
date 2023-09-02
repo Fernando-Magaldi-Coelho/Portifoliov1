@@ -112,7 +112,7 @@ function smoothScrollTo(endX, endY, duration) {
 
 
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: '80px',
   duration: 1500,
   delay: 150
